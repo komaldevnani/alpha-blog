@@ -1,3 +1,58 @@
 <h1> this is a about page </h1>
 
 <%= link_to 'Home', root_path %>
+<style>
+img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 400px;
+}
+div {
+    columns: 300px 2;
+}
+</style>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> for rails </title>
+    </head>
+    <body>
+    <h1 style="color: brown;text-align: center;"> Welcome to my page </h1>
+    <img src="/assets/girl.jpg">
+    <hr>
+    <div>
+        You're getting this error now because Rails expects plain actions like 
+        this one to have views associated with them to display their information.
+        With no view available, Rails will raise an exception.
+        Let's look at the full error message again:
+        ArticlesController#new is missing a template for this request format
+        and variant. request.formats: ["text/html"] request.variant: [] 
+        NOTE! For XHR/Ajax or API requests, this action would normally respond 
+        with 204 No Content: an empty white screen. Since you're loading it in 
+        a web browser, we assume that you expected to actually render a template,
+        not… nothing, so we're showing an error to be extra-clear. If you expect
+        204 No Content, carry on. That's what you'll get from an XHR or API request. 
+        Give it a shot.
+        That's quite a lot of text! Let's quickly go through and understand what
+        each part of it means.
+        The first part identifies which template is missing. In this case, it's 
+        the articles/new template. Rails will first look for this template. 
+        If not found, then it will attempt to load a template called application/new. 
+        It looks for one here because the ArticlesController inherits from ApplicationController.
+        The next part of the message contains request.formats which specifies 
+        the format of template to be served in response. It is set to text/html 
+        as we requested this page via browser, so Rails is looking for an HTML template. 
+        request.variant specifies what kind of physical devices would be served 
+        by the response and helps Rails determine which template to use in the response. 
+        It is empty because no information has been provided.
+        
+        </div>
+    </body>
+    <hr>
+    <footer>
+        This is footer. Thankyou for having a look.
+    </footer>
+</html>
+
