@@ -1,0 +1,7 @@
+<p><h2 align="center">Welcome to <%= @user.username%>'s page</h2></p>
+<div class="row justify-content-md-center">
+    <%= gravatar_for @user,size:100%>
+</div>
+<h5 align="center">  <%= @user.username%> </h5>
+    
+<%= render 'articles/article', obj: @user.articles%>
