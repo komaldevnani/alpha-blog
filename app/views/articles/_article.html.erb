@@ -11,6 +11,7 @@
                 <%= time_ago_in_words(article.created_at)%> ago,
                 Updated at: <%= time_ago_in_words(article.updated_at)%> ago</small>
             </div>
+            <% if logged_in? && (current_user == article.user || current_user.admin?)%>
             <div class="article-actions">
                 <%= link_to 'Edit', edit_article_path(article),
                 class:"btn btn-sm btn-primary" %></td>
@@ -18,6 +19,7 @@
                 method: :delete,data:{confirm:"Are you sure?"},
                 class:"btn btn-sm btn-danger"%>
             </div>
+            <%end%>
         </div>
     </div>
 </div>

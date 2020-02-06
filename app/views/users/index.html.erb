@@ -10,7 +10,11 @@
             <%= link_to user.username, user_path(user) %>
             <hr>
             <small><%= pluralize(user.articles.count,
-            "article") if user.articles %></small></li>
+            "article") if user.articles %></small>
+            <% if logged_in? and current_user.admin?%>
+            <%= link_to 'Delete this user', user_path(user),method: :delete, 
+            data: {confirm:"Are you sure you want delete your and all their articles?"}%>
+            <%end%>
         </div>
     </div>
 </div>
