@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :set_user, only:[:show, :edit]
+    before_action :set_user, only:[:show, :edit, :update, :destroy]
     before_action :require_same_user, only:[:edit, :update]
     before_action :require_admin, only:[:destroy]
     def index
@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     def update
         if @user = User.update(user_params)
             flash[:success] = "Your account was updated successfully"
-            redirect_to articles_path
+            redirect_to users_path
         else
             render 'edit'
         end
@@ -46,12 +46,14 @@ class UsersController < ApplicationController
     def set_user
         @user= User.find(params[:id])
     end
+    
     def require_same_user
-        if current_user != @user and !current_user.admin?
-            flash[:danger] = "You can only edit your own articles"
+        if current_user!= @user and !current_user.admin?
+            flash[:danger] = "You can only edit your own account"
             redirect_to root_path
         end
     end
+    
     def require_admin
         if logged_in? and !current_user.admin?
             flash[:danger] = "Only admin can perform this action"
