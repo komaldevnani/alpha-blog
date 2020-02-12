@@ -49,7 +49,7 @@
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
       role="button" data-toggle="dropdown" aria-haspopup="true" 
       aria-expanded="false">
-        Your profile<%"Admin" if current_user.admin?%>
+        Your profile<%="Admin" if current_user.admin?%>
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         <%= link_to "New article", new_article_path, class:"dropdown-item"%>
