@@ -2,7 +2,6 @@
 
 A space for blogger to develop and post their blog with ease. One can find the blog through its category.
 
-
 ## Requirements
 
 Ruby version 2.6.3
@@ -41,19 +40,19 @@ Rails version 6.0.2 and above
 ## Screenshots
 
 *Home page*
-![Home page](file:///home/komal/rails_pro/alpha-blog/screenshots/Screenshot%20from%202020-05-02%2019-59-06.png)
+![Home page](https://github.com/komaldevnani/alpha-blog/blob/master/screenshots/Screenshot%20from%202020-05-02%2019-59-06.png?raw=true)
 
 
 *Create article*
-![Create article](file:///home/komal/rails_pro/alpha-blog/screenshots/Screenshot%20from%202020-05-02%2020-07-11.png)
+![Create article](https://github.com/komaldevnani/alpha-blog/blob/master/screenshots/Screenshot%20from%202020-05-02%2020-07-11.png?raw=true)
 
 
 *Show article*
-![Show article](file:///home/komal/rails_pro/alpha-blog/screenshots/Screenshot%20from%202020-05-02%2020-09-15.png)
+![Show article](https://github.com/komaldevnani/alpha-blog/blob/master/screenshots/Screenshot%20from%202020-05-02%2020-09-15.png?raw=true)
 
 
 *Articles of Category*
-![Category index](file:///home/komal/rails_pro/alpha-blog/screenshots/Screenshot%20from%202020-05-02%2020-09-39.png)
+![Category index](https://github.com/komaldevnani/alpha-blog/blob/master/screenshots/Screenshot%20from%202020-05-02%2020-09-39.png?raw=true)
 
 ## Usage
 
