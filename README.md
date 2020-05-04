@@ -1,40 +1,66 @@
 # ALPHA BLOG
 
-A space for blogger to develop and post their blog. One can find the blog through its category
-Its very basic application and can be used to make further improvements on it.
+A space for blogger to develop and post their blog with ease. One can find the blog through its category.
 
-##Requirements
+
+## Requirements
 
 Ruby version 2.6.3
 
 Rails version 6.0.2 and above
 
-##Setup
+## Setup
 
-````git clone https://github.com/komaldevnani/alpha-blog.git````
+* Clone the project
 
-````cd alpha-blog````
+  ````git clone https://github.com/komaldevnani/alpha-blog.git````
 
-Run command ````bundle install --without production```` for all gem dependencies
+  ````cd alpha-blog````
 
-For databases run
+* Run command ````bundle install --without production```` for all gem dependencies
 
-````rails db:create db:migrate````
+* For databases run
 
-Now run ````rails s```` and navigate to ``localhost:3000`` in your browser.
-* System dependencies
+  ````rails db:create db:migrate````
 
-##Screenshots
+* Now run ````rails s```` and navigate to ``localhost:3000`` in your browser.
 
+## Feature
+
+* Read all blog posts without need to signing up.
+
+* Develop and post your blog, also can associate categories with it.
+
+* Every user have their page where all their posts are indexed.
+
+* Edit and delete your blog anytime.
+
+* An admin user can delete and edit any blog and user.
+
+ 
+## Screenshots
+
+*Home page*
 ![Home page](file:///home/komal/rails_pro/alpha-blog/screenshots/Screenshot%20from%202020-05-02%2019-59-06.png)
 
 
+*Create article*
 ![Create article](file:///home/komal/rails_pro/alpha-blog/screenshots/Screenshot%20from%202020-05-02%2020-07-11.png)
 
+
+*Show article*
 ![Show article](file:///home/komal/rails_pro/alpha-blog/screenshots/Screenshot%20from%202020-05-02%2020-09-15.png)
 
+
+*Articles of Category*
 ![Category index](file:///home/komal/rails_pro/alpha-blog/screenshots/Screenshot%20from%202020-05-02%2020-09-39.png)
 
-##Credit
+## Usage
+
+* Publish your story, something you learned, your discoveries and enlighten the world with your thoughts.
+
+* For developers, can create something innovative with extra feature by forking this project.
+
+## Credit
 
 Ruby on rails developer course of Udemy.
